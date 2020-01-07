@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML Form</title>
+</head>
+<body>
+    <form method="POST" action="http://request-inspector.glitch.me/">
+        <h2>User Login</h2>
+        <div>
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="password">
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    <form method="POST" action="http://request-inspector.glitch.me/">
+        <h2>Compose an Email</h2>
+        <div>
+            <label for="to">To</label>
+            <input id="to" name="to" type="text">
+        </div>
+        <div>
+            <label for="from">From</label>
+            <input type="from" name="from">
+        </div>
+        <div>
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject">
+        </div>
+        <div>
+            <textarea id="email_body" name="email_body" rows="30" cols="100" placeholder="Content Here"></textarea>
+        <button type="submit">Send</button>
+            <input type="checkbox" id="send_folder" name="send_folder" value="yes" checked>
+            <label for="send_folder">Send Folder</label>
+        </div>
+    </form>
+    <h2>Multiple Choice Test</h2>
+    <form>
+       <p>Which operating system do you use most?</p>
+           <label>
+               <input type="radio" name="q1" value="Linux">Linux
+           </label>
+           <label>
+               <input type="radio" name="q1" value="Windows">Windows
+           </label>
+           <label>
+               <input type="radio" name="q1" value="Lion X">Lion X
+           </label>
+           <label>
+               <input type="radio" name="q1" value="Android">Android
+           </label>
+        <p>Which water do you like better?</p>
+            <label>
+                <input type="radio" name="q2" value="Aquafina">Aquafina
+            </label>
+            <label>
+                <input type="radio" name="q2" value="Dasani">Dasani
+            </label>
+            <label>
+                <input type="radio" name="q2" value="Nestle">Nestle Pure Life
+            </label>
+            <label>
+                <input type="radio" name="q2" value="Acqua Panna">Acqua Panna
+            </label>
+        <p>How many days have 6 characters in it?</p>
+            <select for="days"name="days[]" multiple>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+    </form>
+    <form>
+        <p>Which NFL Teams have 5 Super Bowl Wins?</p>
+            <label><input type="checkbox" id="team1" name="team1[]" value="Cowboys">Cowboys</label>
+            <label><input type="checkbox" id="team1" name="team1[]" value="Steelers">Steelers</label>
+            <label><input type="checkbox" id="team1" name="team1[]" value="Patriots">Patriots</label>
+            <label><input type="checkbox" id="team1" name="team1[]" value="49ers">49ers</label>
+            <label><input type="checkbox" id="team1" name="team1[]" value="Giants">Giants</label>
+    </form>
+    <form>
+        <h2>Select Testing</h2>
+            <label for="transmission">Does today end with a x? </label>
+            <select id="transmission" name="transmission">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+    </form>
+</body>
+</html>

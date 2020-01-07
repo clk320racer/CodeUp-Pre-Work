@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch Statment JS</title>
+</head>
+	<body>
+		<script>
+		// Don't change the next two lines!
+// This creates two variables:
+//     one with the colors of the rainbow, and another with a single randome
+//     another with a single random color value
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var color = colors[Math.floor(Math.random()*colors.length)];
+
+			switch (color) {
+				case "red":
+					console.log("color is red");
+					break;
+				case "orange":
+					console.log("Color is orange");
+					break;
+				case "yellow":
+					console.log("Color is yellow");
+					break;
+				case "green":
+					console.log("Color is green");
+					break;
+				case "blue":
+					console.log("Color is blue");
+					break;
+				default:
+					console.log("Color is indigo or violet");
+			}
+		</script>
+	</body>
+</html>

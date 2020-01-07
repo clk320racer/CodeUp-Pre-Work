@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML Form</title>
+</head>
+<body>
+    <form method="POST" action="http://request-inspector.glitch.me/">
+        <h2>User Login</h2>
+        <div>
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="password">
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    <form method="POST" action="http://request-inspector.glitch.me/">
+        <h2>Compose an Email</h2>
+        <div>
+            <label for="to">To</label>
+            <input id="to" name="to" type="text">
+        </div>
+        <div>
+            <label for="from">From</label>
+            <input type="from" name="from">
+        </div>
+        <div>
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject">
+        </div>
+        <textarea id="email_body" name="email_body" rows="30" cols="100" placeholder="Content Here"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
